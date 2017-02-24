@@ -1,0 +1,29 @@
+{
+  "name": "wangming-phonecat-angular",
+  "authors": [
+    "xiaoming <xiaomingboy0215.163.com>"
+  ],
+  "description": "angular tutorial",
+  "main": "app.js",
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-animate": "^1.6.2",
+    "angular-resource": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

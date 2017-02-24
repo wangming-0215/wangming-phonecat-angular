@@ -1,0 +1,18 @@
+<div class="sort">
+    <p class="sort-tips">Sort by: </p>
+    <div class="sort-option" ng-class="{selected: orderProp === 'default'}" ng-click="changeOrderProp('default')">Default</div>
+    <div class="sort-option" ng-class="{selected: orderProp === 'name'}" ng-click="changeOrderProp('name')">Name</div>
+    <div class="sort-option" ng-class="{selected: orderProp === 'age'}" ng-click="changeOrderProp('age')">Age</div>
+</div>
+
+<div class="phone-list-container">
+    <ul class="phones col-md-10">
+        <li class="thumbnail phone-list-item" ng-repeat="phone in phones | orderBy: orderProp">
+            <a class="thumb" href="#!/phone/:phoneId">
+                <img ng-src="{{ phone.imageUrl }}" alt="{{ phone.name }}" />
+            </a>
+            <a href="#!/phone/:phoneId">{{ phone.name }}</a>
+            <p>{{ phone.snippet }}</p>
+        </li>
+    </ul>
+</div>
