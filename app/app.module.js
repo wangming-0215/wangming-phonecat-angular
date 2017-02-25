@@ -3,5 +3,6 @@
 angular.module('phonecatApp', [
     'ngRoute',
     'phoneList',
-    'navgation'
+    'navgation',
+    'phoneDetail'
 ]);

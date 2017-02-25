@@ -7,11 +7,11 @@
 
 <div class="phone-list-container">
     <ul class="phones col-md-10">
-        <li class="thumbnail phone-list-item" ng-repeat="phone in phones | orderBy: orderProp">
-            <a class="thumb" href="#!/phone/:phoneId">
+        <li class="thumbnail phone-list-item" ng-repeat="phone in phones | orderBy: orderProp | filter: query">
+            <a class="thumb" href="#!/phone/{{ phone.id}}">
                 <img ng-src="{{ phone.imageUrl }}" alt="{{ phone.name }}" />
             </a>
-            <a href="#!/phone/:phoneId">{{ phone.name }}</a>
+            <a href="#!/phone/{{ phone.id }}">{{ phone.name }}</a>
             <p>{{ phone.snippet }}</p>
         </li>
     </ul>

@@ -1,4 +1,14 @@
 @import 'phone-list/phone-list.style.css';
+@import 'common/navgation/navgation.style.css';
+@import 'phone-detail/phone-detail.styls.css';
 body {
     padding: 20px;
+}
+
+.view-container {
+    position: relative;
+}
+
+.view-fram {
+    padding-top: 56px;
 }

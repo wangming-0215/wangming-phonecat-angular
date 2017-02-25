@@ -1,3 +1,5 @@
 "use strict";
 
-angular.module('navgation', []);
+angular.module('navgation', [
+    'common.services.shareDataService'
+]);
